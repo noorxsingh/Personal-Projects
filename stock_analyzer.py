@@ -2,9 +2,9 @@ import requests
 from time import sleep 
 
 BASE_URL = "https://polygon.io/"
-API_KEY = "yro_LLgVHShua3tJU6ATzzFSXbrwlBBJ"
+API_KEY = "Your own API"
 def get_stock_data(symbol):
-    endpoint = f"https://api.polygon.io/v1/open-close/{symbol}/2023-01-09?adjusted=true&apiKey=yro_LLgVHShua3tJU6ATzzFSXbrwlBBJ"
+    endpoint = f"https://api.polygon.io/v1/open-close/{symbol}/2023-01-09?adjusted=true&apiKey= Your Own API KEY"
     response = requests.get(endpoint)
 
     data = response.json()
